@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Code Solo</title>
     <!-- The code below imports bootstrap CSS - this does the styling. -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <!-- The code below imports bootstrap JS - this adds interactivity. -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</head>
-<body>
-<!-- Follow the steps below to build out a quick webpage using boostrap documentation. -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Follow the steps below to build out a quick webpage using boostrap documentation. -->
 
-<!-- 1. Go to getbootstrap.com -->
+    <!-- 1. Go to getbootstrap.com -->
 
-<!-- 2. In the search bar, type "navbar" and press enter. There are many to choose from,
+    <!-- 2. In the search bar, type "navbar" and press enter. There are many to choose from,
      but scroll and find the one that simply says "Nav" -->
 
-<!-- 3. Copy the HTML code and paste it below. Run your code - what do you see?  -->
+    <!-- 3. Copy the HTML code and paste it below. Run your code - what do you see?  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<!-- 4. Auto-format your page to clean things up. -->
+    <!-- 4. Auto-format your page to clean things up. -->
 
-<!-- 5. Next, in the search bar, type "cards" and press enter. Copy the "Example" HTML and paste below. -->
+    <!-- 5. Next, in the search bar, type "cards" and press enter. Copy the "Example" HTML and paste below. -->
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PEA4QDw8QEg8OEBAWDxAQEBAQEBAQFRcWFhURFRYYHyghGBslGxYVIT0iJSkrLy46GCAzODMtPSgtOi8BCgoKDg0OGhAQFysdICUtLS0tLy0tLTUrLS0vLS0tKy0tKysrLS0tLTUtLSsvLS0tLS0rLSsuLy0tLS0tLS0tL//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAECAwUHBgj/xAA/EAACAgEDAgMEBwYFAgcAAAABAgADEQQSIQUTIjFBBlFhcQcUIzKBkdFCUlOhorEVM2KCwXJzJDQ1Q2OD4f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAIREBAQACAgMAAwEBAAAAAAAAAAECEQMxEiFBIlFhgQT/2gAMAwEAAhEDEQA/AO4xEQEREBERAREQEREBERAREQEREBERAREQEREBETzPtb7VHQMiCjebFJVi+1ODgjyyT5fnJbprHC5XUemlNw94nIuo+2vULgSripCcfZKF59Bkktn5GdI0NDIHDtuLPnPOcYVQDn14jGzJvl4cuOTf1tokHMlU/dE1pyZIiJAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICeQ+kzQ9zSraBlqLAfjtfwkD/AHbD+E9fIvVNIL6bqj5W1svyJHBks3NN8eXjlK4roKN11NeQQ9lSjHB52KQQOSORz8fTE671JrhTcdPsN4rc0hwShswdoYAjjPxE5Z7MUsddpUYHKWHgnJXZliPP0K/H19/HWpninqvT/wBt/KRE6O2oNFJ1QRdQUBtWv7qsf2fmBgHHGc4m5qHhHymr1d5rUELuLPWoGcffYLnPwBJ+OMTaqOBOleNWIiQIiICIiAiIgIiUJgViY2uHz+Uh9Q6tTp1L321UoP27bFRfzYiWSjYTDqH8gPxnh+o/SdoEyKWu1TD009Z7efjY+1cfHJm29kut2a6h77NP2PtWVKzZ3GKAKQ7EAAE5PAz6czXhZ7qbbDVdVqqu09D2EW6s2ChcMdxrUu/I8sKPWTRY3vM8P1Id7qlF/mui1lGmQ48nt099l5B+Pc06/NDPbSC/vN75cLz8JiiXUGb6x8P5yovHuMwRJqCQL1+Mu7q++RZSNCYLF94lQw94kKJNKnRIQMuSwgjmNDXVeyujW57+2TY7s+S7YVm88AYHqfP3zbLUgAAxge85P5mZokW5W91hams+ePMHz9RyDM0RCEREBETE9wHHmYGWCZqup9Zo0y7tRqKqV99jqn5ZPM8jr/pO0C5GnXUatuRmqspVn/uWbRj4jM3MLU26AbVHr+UxtqPh+c49r/pD6la2ymvTaTd5Z3arUDLbQccL5n3N/IzS9Qp1uoGdbfqbFbPg1FxoRsKGIShMFzjd4VQnjywcjc4v3U8nWer+3PTtMStusq3j/wBqnN1ufdtryR+OJ5XqH0oE5Gk0Njc/5uqcUqM8A7F3MeePSeF0H1QVtYpPaUgfZLTpa7G58rLiNvmOdoORwDg4W9Qprq1V1GlC6igV9w3sLyN7ItXhO6t1yxcMu3lUGMEZ6Tjk+JtuNV7U9W1YJOpNaYyV0NIRQME83PuPofUemcZmns6dSCbdRfUX9bbrm1dpXgq+QSFBFlTZ3ADuDPHlE6r1QWl69VU11dLALblVsIIO21MKFwQMhBgYPriY7NPZqRnSPvSwKtu6tQ9e1VRm3EYwQqk4IOR6jE6Sf4jY0aylUtssrdVqdq177Fd1g+8DXT4iFKej/v8AIxOtewIb/DqjtpVmNxValdKh42C5DEsDgDIJJzmcc6lpS1wa2yqqmvfsqLd20h+CxVeDuyBnOeB5Gds6TS9fTkXTbe79WZqNwKobXBdNw5wNzDPnOXL0seV0/RE7wFR0N/WNPrfrOtYX21P2msNgXG1v2XVMEcDHM6JOQexHTOsVdVOourrdrmNfUrSKs1DtpZtBQgZP2fKAjKkehnX5xaViUiQIiICIiAiIgJVfMfMSkqnmvzECbERMqREQEREBNd1KlmS5Eba7o4Rh5qzKQG/AmbGYNSPIyzsfNuh06EB7lLXbbS7MO9aGprJs++2S/cRwOQOR7pJ0OuW1bGr0xsVWqrU6m4U1PZaXClwm0YADZAZifCB7xt/azTHSdR1iqPCbatVUo43rZ4nXzA/zEt/D35mnfShUeutBfVQpApPOX7mRqRjJLGllxwcgP5+R9u9uanU+oo4ao2W6Vskb6azTTYTnDOq2MzA4OCT6cnzkfWi1rQECuNRdurvR2fYDYbduB+4xYg+4cfC+rV06hLS1QsetUcIHKoSWIsclFXcSxqOTnzfyB5kV6vbW3YKIllmKnpqakXVBQGLZGR4mADN+62I6Rg1uiuvs2rV2tKu8J3GWkbnYlnxgkEnjhSODx4jKKmnq7ge8l9qC1KEDotNSBAhdxhgRjOVGTtAEijTXX3KiMTaDu3MxxUqkfaMecKDj088AAkgT0SV1VIa0pW5lALnsKUyCOe1gqBnOFbcfcUPEW6GpTU1AMU01K1BW2vZeuoC8E+FGZvMgcLgmQa+r2X432lveoYAD35A9PjPU6Dqepuzi2ylVYoMtciM4HISs8hgAeAo9cZwcQr+vBrDTqsWFGwRqQXYnjDq1uQnHI27Scj7sb/iodWGG07wdm0mm01OayQ/ayQRZXkZAYAjA9Bx33p9IrppQeSVVqPkqgD+04hp+lLa9Y0xxmysWaexjlFdgpaliSRyM7GJyV4Yt4Z3eceW9NQiInFSIiAiIgIiICIiUJfSPEPx/t/8AssmTTDxfgf8Aj9JKJUREypERAREQEsuGQZfEDln0taHDaHVAHG6zT2kcHbYN9fPp468Z/wBc5+NK28X79grpYXbSUDdkqg8TeS9t6BnB4DcN5HtXt30s6rQaylR9oE30/wDdqIsr/moH4zi6a1hU9lPmVrtC+QKv9m6HHOWW0MTnP2eeODPXx3eLFW6S1LtSqNUVeyo7rlsV0tqsXh38CYGSvixnOBx6431bEM1h8dZYMx4UqAMr8AB+XPAyucmq09z6dlppPd1KF79jWWGvTV7c2WWOS23xp5nbgnHPnZend1GmDZ2623TBwPLdY6rYvI4IY2A58seWZtlOtP1OjbyruBZefJlOPBUP+kNs+Dd0+qlbOka5l0vdsJCtYzVpXuXABFQPg8Vh3eELkDknjki7WdvVW2d5wN7goGD7WYolmwqhVm5ssbAIJI49xm1aZKaURBZ4G20MNxb7W3ewZQMkrgHy8kYHGWEz617VbrOuvqKq6tNpNQto8DPfihAgZRhSrbz4nryAdwJQZPAMbW9PGpqat2TuUDC2eP7K7uWVvS24BmQtX58nLebEDdHtuv1Hco1FNY1LA/Y6bYSiqqhdxNpSvL9lgBye35eIZdE7FNFeoN2oFSm/b/lVl0LVhlI22DaG28cnL54BO2610Nt0LRV0azptILAvqUCAtubYhLMGPyQBgPD41AAwSe1zjPshoL7esaN7XUjTrcwrCVVlE7bqCO2SrjLLlgxPK5ABE7NOPJ3GoRETmpERIEREBERKERKSBM+l/a/D/mYJJ0o4PzijNERMqREQEREBERAj6gc5984HrdMNHq76HwK9NqrF5wAulv8AErnJ9Etxx54+E+gL1yPlOR/Sl0/ZrNPeBxq6Gqbzx3qcshOOfuO/Hrt/LtxX4zk8fqtPexata97VKKbK+++nevwqj1WYIFtT9sPgHPiPOME4bLO2iMcPdoL0tsYcbmdzfgD08auMEA8jgZwMmo1V6WLYrMFuRdrLc9Fxt5S1a7EOQWdWfH3fHnaSZboz3XI+99ZSwd7torKayGPfVMB2U9shwAWFo9SAPR8YU9rdIAbgpJUFLKzx4qgopJH+1a2z7nEt6VrNT2941FpteliGseywnDXLVp0UsANx075Y5/YAGZvW6cLqe3pwTZ09FUtYAwdMFSGxyyhR22wMAdvGe2d3mVD1h0Wk2IobdQSDfSrEMVIKsttWQGBKsPXwnOUu5obQ2GwAuqpcNLbUrhjuS2xQDySSdjbRnJIOpwcspMr1Klu52bkUXuCbKUZBVc1mxmtRC9YLFqlzsdWDIQQw5OPp1lOooWxdy2VW1Eop3eCpwyoxACVpgNgYRMsD+yZg0/Whbf2u0+oKPYKO1SL3dGGxz2yRkNy3OR4sEHClWqr1/wBF9KnqD/dU6bTWAVqyuVLGio7irMqYWlFC7mb7xY8jPWZzr6MdM31vqd1qstxTSq6FdoRSHxk+RY7M4XKgbQC2DOiTz8l/JqdKxKSs5qTR+2PtEnTdI+pZC7AqtVYO3fY3kCfQcEk/Cbuee9uvZz/E9G2nVwliur1MwJXeuRhsc4IJGR5ZzzKOadR9vbOraPVaZ6lp1KmizS2VWOAzd6utkOeQdth5zzz5T0PS/pN6fpnp0IW9qKdtR1rsGDsOGuIJ3FS2Tuzn1xOT+0HRn0F509tlT3VgGwUszJWTyF3MBlsEHy4yOfPG46F9H2v1vYZa1+qagKTqRYmwVnhxjO7ePENuPMfjLofRkpKKoAAHkAAPkJWZCIiUJL048I/GRJMqHhX5CSqviImQiIgIiICIiBQieG+lHQdzp9lgGX0ViXrjz21kiwD51s891IOvoVw6OMparKw96sMETWF1dpXzv1IVmg7y4GnuV0apVYAWjDkKSgChkq5BP+Z5eRErQOtNVrV5xVUHQsFFjuaEvcnHC+J9KMcjFI5PJNmlqNNq6Zxmyu2zTNkOAXpbNAJU5ALpW2R5ZznnMlNTUGsqrcNRbVWEft2opTtDTsdj+MAA6N+c5DA5IOZ7L+mGPrto0x0mmU42Vlk2g7ntDla9pxuQmzu2f9TDgEAmRotLdqkH1zS4KHwamsotgyQS5UFQvvLKyjzOxjmYOsLddXVqKTt1NCvVqa1yzgKQzrg5YgHL49xLDkmNFq9RdY919+7SVJuA2jt2WZOwFccgbHsK+RFIXnMnwZNXoK9NqFXU6inUF9vYqtVLsblBBuuesWHJPCLg8jLeW67X9QSglLNelack6Xp1BGP9FiAJXn5srCaRtc731ErY1lzKzqgey2nTMdzIu3xdx1JdnHPi4xkzZ9R0FNrJptn31C6a4VCpDdyF05YDblsDgYHONobEuutjpX0YCo6a56arK0a4AC7b3mwiMGs2sRkhx6KcY4PmfYzRextOzTHGMNfcwx5cty34tub/AHTezy5XdbhERMhERA4d7eewvUW6hqLaNO99WpsLo6FfCW80fJG3BzyeMY5nU/Ybor6DQabTWEGxA7WbTlQ9jtYVB9QN2M+uMzfRLsIiICUiICTwPKQQOR8xJ8lUiImQiIgIiICIiAmHUrwD7pmlrjIIgcS+kXRGjqFzJuA1lKXIVySLa8V2FQCMtgVH/iectYV3O11i103hXoQILXG5Tg7chSoDvSVz4lUjAwpHSvpZ0WdNptUAM6S8ByRwKbvs3z8A3bb/AGzl/U1QJQxVy1NjouM8o2bKwwIB5Pf8h5JgD3+zC7kc62um1Sl0NN2251BALMyXVjdsDL4WtUFWXI+0XaQy8EyV1xXOlVXrrrfU37XZTua1TZQpdjtVs/a2jxDIDHnymms01mkTT22VuVGEzsYqa+4z6mzOMBfF2gf2sWMOPPPpaSKdZQMs+muW2tc/s5Q+H/dp0GPfeo9ZdfRrtFYtncZmRBdqLBY9u3Yniq7Svu8OBWdQVDeEsg4O0SVo7crbcUXZSLRaoeqw2rUauK7qlUOMWMcHK5QFSpIKwOm6JjrLFSyyushnL0qGLUscqMEgMDkD18jgHE9H1Sq/sstQqwUqrHeRWfuFxt7m4spDDu4AUBTkAeYW2zodV9jKlTQaMI7ujVb0ewYdlclwWHo2GGZupD6RT29Ppq/D9nTUp2gKuQoBwABgfDAkueW9tqxKRIKxKRArEpEBERAREQLqx4l+Yk6QqPvL+P8AYybM1SIiQIiICIiAiIgIiIGl9oumLqtPqtM3lqKrEB9xYeE/gcH8JwjRXZRtw22tRYw4GU1enUtvI9NpVhz8ucz6J1I8jOHe1GnOj6jqwo4F1WqqXOAwsO4oeQNvcWzPn978/RxX1pnJor9FbdaUrXeVBUAaWnV3WLVVXZZYxtI2VgWIAqnyxhc8nIdW1Vmn1ITO5HruRCcOKz2rMMeck1pYN3IOz3c3JZzdVaNtVTla9QLe1YAQQhQ/tFqx5e4YOQgAjVaMCm4V2rfXW6WIyMNwBwjB/wB3BFePfjy9J2YbS1GrBsoKvVajGuxTZXgcqwyDurxvZfMlNzKedpbX9K6mzW/V9YCputPYcBvs3sbBRSpztyRjB4IHIwpTJpdQ9GWq2lXwzVncUs429wYIIfHG5Sp8xkgEHc+zd2lv1ekTZZU7X1FUG16mNbbuHGOMD7vbXGPP1k6V2gxETytkREBERAREQEREBEgddr1D6bULpHVNS1bCl28lf0PkcfPBnN/oy6j1TU6t37lT6VXYa5/BuutFQSuwcZydieWB98kZMDrml+9+B/uJLkbSDlvw/wCZJmapERIEREBERAREQERECy5cqZy76WNCA+h1WOCbNNcR+7YN9f8AUrL/APZOqTyft50w6nQaypBmxUNlPv7tR7iY+ZUD8Z047qpXH7tXWtda2O9bkjxozITZSAprc43FTU2m8sElfTnEWsV0WVV5y2td+82Ao7dm5awFycIHIYc58JzjgDLWlVoQn/LD0XgAAAITsccDzPcVufPZ8DMRCtcXuf7ez7Ps9uzuC+qlA5U4wfEVZcMM7/U8T1RzZ9Lm3bV2wGLOuaVvHZZQoUuWypB8S5TkbMkY4Pofo96PZ/iFVtmxe2tj9sMC+ShUFlH3fvefrPKajWWXvdY9r/VdOHNqoVWt2BIWvCYVt3HpyPmM+x+iqpR1LXMS29ktVFC+Bag9ZrOf9SbSp9QG5PMzl6xqx1iIieZsiIgIiICIiAiIlGk9sdffptI99FlSNVZTva2trUFbOqMSAyngNu8/2ces1nstrqX1Wpq6cmiOhVa7LrtOGVm1Nm8MhxwWGwE5xgMJs/bT/wBP1x/cod/l2/Hn+mU9lcWJqdUB/wCd1Vti+XNKYpqIx6FKg3++B6XSDg/P/gTPMWmHhHzP95lmKpERIEREBERAREQEREBIupXnPvkqYtSuR8pYPn3XaAabU6nStxXRqLU88Y0t653DnzFVmBgE+D0Ei9Or1Kr2tTqc1cAJRYz21tnblLFwij35YjyyM4x0b219i9Tq9Ump0llKF60rvFzWr9wttsGwePwuVKnA4Ex9P+jCs4Os1l959a6f/DVY9xxlyMcfenq85r3WNPBdS1unCLW4yAQcam822O/BB2VBFPJPAByQCQ3Bmy6ZoeqagIul0uoFS42M5+oadBlvEijaf2vRc8AzrXRvZXR6TnTaSmpvVwgNp+bnLH8TN0NOPUzF5Z8Xxc/0PSOs1p3NV1YKFGTVRTVbk+423KT+SibXTazXvgJVvH7zJtB+OcgT1wqUeg/vL5zuf8XTV6KjUH/OFS/BCzH8c8SWdMfeJJiY3VRDp2+H5y00t7v7SbEbEEofcfyls2ES+Q10Sea19w/KWHTr7v5mPIazXaRL6rabATXfW9dgBwSjqVYZ+RMaHSJRVVTWMV01oiD3KoAH8hNidMPef5So0w95jyF9Qwq/IS+ImQiIgIiICIiAiIgIiICDEQMXYWZAoHkJWICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIlrKT6kflLO038RvyT9IGWJjFZ/fb+n9JXYf3m/l+kC+JZs/wBTfy/SU7R/fb+n9IGSJiNJ/ff+n9JTsn99/wCn9IGaJgNB/iP+a/pH1c/xH/l+kDPEj/Vj/Ef8x+kqKD/Ef+n9IGeJh7J/iP8A0/pHZP8AEf8Ap/SBmiYDpz/Ef81/SUOl/wDks/MfpAkRMCaYD9pz8zMwECsREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/2Q==" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
 
-<!-- 6. Find an image you like from a Google search - put this as the src for the img tag. -->
+    <!-- 6. Find an image you like from a Google search - put this as the src for the img tag. -->
 
-<!-- 7. Scroll through the side menu and see what else you can add - take a look at the options in the "Components" section.  -->
+    <!-- 7. Scroll through the side menu and see what else you can add - take a look at the options in the "Components" section.  -->
 
-<!-- 8. Try out some new code and have fun! 😊 -->
-    
-</body>
+    <!-- 8. Try out some new code and have fun! 😊 -->
+     
+  </body>
 </html>
